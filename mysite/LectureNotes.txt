@@ -1,9 +1,0 @@
-Part one, 
-1/ Create the mysite project
-2/ Create blog app
-3/ Create urls.py, models.py, 
-forms.py in blog app
-4/ migrate steps
-
-Part two.
-5/ Create Post model
