@@ -1,0 +1,41 @@
+1/ Try use replacing POST by "post"
+and see if anything change?
+
+2/ What happen if some name in 
+app urls.py is the same as in 
+project's urls.py file if we use
+the short {% url 'name' %}?
+Why tf doesn't my 
+{% url 'post_list' %} work ?
+
+3/ U might have mak some mistakes
+my_site's urls.py
+
+4/ {%if post.published_date%} ?
+Is that mean any value can be use
+as a boolean value in django ?
+
+5/ Wtf is |safe|linebreaksbr in 
+post_detail.html ???? medium js ?
+As we expect it to look like ?
+
+6/ Note that <span> tag, what are
+the class of this <span> tag ?
+
+7/ Note the {% empty %} template
+tag in the post_detail.html
+{% empty %} lies btw
+{%endif%} and {%endfor%} ?
+
+8/ Is there any different btw 
+|date:'d-m-Y' and |date:'D M Y' ?
+
+9/ post.text|truncatechars:200 ?
+#Note: |somethin: are filter in 
+Django
+
+10/ {{object}} in 
+post_confirm_delete.html
+
+11/ 
+Bootstrap 3 Glyphicons ??
