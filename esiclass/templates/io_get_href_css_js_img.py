@@ -28,8 +28,9 @@ def get_href_css_js_img(file):
     # images link
     print('[img script in {}] \n'.format(file))
     for a in soup.findAll('img',{"src":True}):
-        if a['src'][0:7] == 'images/' and  a['src'][-4:] == '.jpg':
-            html = html.replace(a['src'],"{% static  " + "'" + a['src'] + "'" + " %}")
+        if a['src'][0:7] == 'images/':
+            if a['src'][-4:] == '.jpg' or a['src'][-4:] == '.png':
+                html = html.replace(a['src'],"{% static  " + "'" + a['src'] + "'" + " %}")    
 
     # Affect the file
     with open(file, "w", encoding='utf-8') as f:
