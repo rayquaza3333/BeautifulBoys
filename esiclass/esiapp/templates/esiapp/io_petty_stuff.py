@@ -7,21 +7,23 @@ def get_href_css_js_img(file):
     with open(file, "r", encoding='utf-8') as f:
         html = f.read()
     soup = BeautifulSoup(html, features='html.parser')
-    urls =['about.html',
-     'business.html',
-     'coming_soon.html',
-     'communication.html',
-     'contact.html',
-     'course_details.html',
-     'form.html',
-     'hocvien.html',
-     'index.html',
-     'language.html',
-     'login.html',
-]
+#     urls =['{% url 'esiapp:about' %}',
+#      '{% url 'esiapp:business' %}',
+#      '{% url 'esiapp:coming_soon' %}',
+#      '{% url 'esiapp:communication' %}',
+#      '{% url 'esiapp:contact' %}',
+#      '{% url 'esiapp:course_details' %}',
+#      '{% url 'esiapp:form' %}',
+#      '{% url 'esiapp:hocvien' %}',
+#      '{% url 'esiapp:index' %}',
+#      '{% url 'esiapp:language' %}',
+#      '{% url 'esiapp:login' %}',
+# ]
+#
+#     for u in urls:
+#         html = html.replace(u,"{% url " + "'" + "esiclass:" + u[0:-5] + "'" +" %}")
 
-    for u in urls:
-        html = html.replace(u,"{% url " + "'" + "esiclass:" + u[0:-5] + "'" +" %}")
+    html = html.replace("'{% url 'esiapp:","'{% url 'esiapp:")
 
     # Affect the file
     with open(file, "w", encoding='utf-8') as f:
