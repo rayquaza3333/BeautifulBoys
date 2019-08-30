@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from esiapp import views
 
 urlpatterns = [
     path('test/', views.TestView.as_view(template_name = 'esiclass/test.html'), name = 'test'),
