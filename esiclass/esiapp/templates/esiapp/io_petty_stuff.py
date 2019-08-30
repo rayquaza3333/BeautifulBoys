@@ -7,23 +7,24 @@ def get_href_css_js_img(file):
     with open(file, "r", encoding='utf-8') as f:
         html = f.read()
     soup = BeautifulSoup(html, features='html.parser')
-#     urls =['{% url 'esiapp:about' %}',
-#      '{% url 'esiapp:business' %}',
-#      '{% url 'esiapp:coming_soon' %}',
-#      '{% url 'esiapp:communication' %}',
-#      '{% url 'esiapp:contact' %}',
-#      '{% url 'esiapp:course_details' %}',
-#      '{% url 'esiapp:form' %}',
-#      '{% url 'esiapp:hocvien' %}',
-#      '{% url 'esiapp:index' %}',
-#      '{% url 'esiapp:language' %}',
-#      '{% url 'esiapp:login' %}',
+#     urls =['{% url 'about' %}',
+#      '{% url 'business' %}',
+#      '{% url 'coming_soon' %}',
+#      '{% url 'communication' %}',
+#      '{% url 'contact' %}',
+#      '{% url 'course_details' %}',
+#      '{% url 'form' %}',
+#      '{% url 'hocvien' %}',
+#      '{% url 'index' %}',
+#      '{% url 'language' %}',
+#      '{% url 'login' %}',
 # ]
 #
 #     for u in urls:
 #         html = html.replace(u,"{% url " + "'" + "esiclass:" + u[0:-5] + "'" +" %}")
 
-    html = html.replace("'{% url 'esiapp:","'{% url 'esiapp:")
+    html = html.replace("{% include 'esiapp/header.html' %}","{% include 'esiapp/header.html' %}")
+    html = html.replace("{% include 'esiapp/footer.html' %}","{% include 'esiapp/footer.html' %}")
 
     # Affect the file
     with open(file, "w", encoding='utf-8') as f:

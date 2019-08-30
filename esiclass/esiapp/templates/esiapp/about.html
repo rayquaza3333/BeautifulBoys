@@ -5,7 +5,7 @@
 	<title>Edulearn Education Category Bootstrap Responsive Website Template | About Us :: W3layouts</title>
 	<!-- Meta tag Keywords -->
 	<meta name="keywords" content=""/>
-{% include 'header.html' %}
+{% include 'esiapp/header.html' %}
 	<!-- breadcrumb -->
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
@@ -77,7 +77,7 @@
 							<p class="text-dark">Đọc chuẩn xác 44 âm</p>
 							<p class="text-dark">Đọc chuẩn xác phiên âm</p>
 							<p class="text-dark">Ngữ điệu tự nhiên</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Read More
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Read More
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -95,7 +95,7 @@
 							<h4 class="text-capitalize font-weight-bold mb-3 text-dark">– Khoá cơ bản cho người mất gốc. </h4>
 							<p class="text-dark">Ngữ pháp và từ vựng cơ bản nhất</p>
 							<p class="text-dark">Giúp học viên tìm lại sự tự tin và niềm vui học anh ngữ.</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Read More
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Read More
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -114,7 +114,7 @@
 							<p class="text-dark">Giáo trình theo 3 lv học</p>
 							<p class="text-dark">Phản xạ giao tiếp nhanh nhẹn.</p>
 							<p class="text-dark">Giao tiếp với giáo viên bản ngữ hằng tuần.</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Read More
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Read More
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -133,7 +133,7 @@
 							<p class="text-dark">Luyện khả năng nghe - đọc - hiểu trong giao tiếp hằng ngày</p>
 							<p class="text-dark">Tương tác đặc biệt giữa giáo viên và học viên</p>
 							<p class="text-dark">Thời gian linh động, đặc biệt phù hợp cho người bận rộn</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Đọc Thêm
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -284,4 +284,4 @@
 		var element = document.getElementById("nav-item2");
   		element.classList.add("active");
 		</script>
-{% include 'footer.html' %}
+{% include 'esiapp/footer.html' %}

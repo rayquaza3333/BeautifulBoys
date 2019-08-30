@@ -30,11 +30,11 @@
 		<div class="middle-w3ls-nav py-2">
 			<div class="container">
 				<div class="row">
-					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'esiclass:index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
+					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
 					<div class="col-lg-8 right-info-agiles mt-lg-0 mt-sm-3 mt-1">
 						<div class="row">
 							<div class="col-sm-12 col-6 top-login-butt text-right mt-sm-2">
-								<a href="{% url 'esiclass:login' %}" class="button-head-mow3 text-white">Đăng Nhập</a>
+								<a href="{% url 'login' %}" class="button-head-mow3 text-white">Đăng Nhập</a>
 							</div>
 						</div>
 					</div>
@@ -57,23 +57,23 @@
 				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 					<ul class="navbar-nav justify-content-center">
 						<li class="nav-item" id="nav-item1">
-							<a class="nav-link text-white" href="{% url 'esiclass:index' %}">TRANG CHỦ
+							<a class="nav-link text-white" href="{% url 'index' %}">TRANG CHỦ
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item" id="nav-item2">
-							<a class="nav-link text-white" href="{% url 'esiclass:about' %}">GIỚI THIỆU</a>
+							<a class="nav-link text-white" href="{% url 'about' %}">GIỚI THIỆU</a>
 						</li>
 						<li class="nav-item dropdown" id="nav-item3">
 							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								KHÓA HỌC
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:language' %}">PHÁT ÂM</a>
-								<a class="dropdown-item" href="{% url 'esiclass:communication' %}">CƠ BẢN</a>
-								<a class="dropdown-item" href="{% url 'esiclass:business' %}">GIAO TIẾP</a>
+								<a class="dropdown-item" href="{% url 'language' %}">PHÁT ÂM</a>
+								<a class="dropdown-item" href="{% url 'communication' %}">CƠ BẢN</a>
+								<a class="dropdown-item" href="{% url 'business' %}">GIAO TIẾP</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{% url 'esiclass:form' %}">ĐĂNG KÝ</a>
+								<a class="dropdown-item" href="{% url 'form' %}">ĐĂNG KÝ</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown" id="nav-item4">
@@ -81,14 +81,14 @@
 								TÀI LIỆU
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:coming_soon' %}">LISTENING</a>
+								<a class="dropdown-item" href="{% url 'coming_soon' %}">LISTENING</a>
 							</div>
 						</li>
 						<li class="nav-item" id="nav-item5">
 							<a class="nav-link text-white" href="gallery.html">HỌC VIÊN</a>
 						</li>
 						<li class="nav-item" id="nav-item6">
-							<a class="nav-link text-white" href="{% url 'esiclass:contact' %}">LIÊN HỆ</a>
+							<a class="nav-link text-white" href="{% url 'contact' %}">LIÊN HỆ</a>
 						</li>
 					</ul>
 				</div>

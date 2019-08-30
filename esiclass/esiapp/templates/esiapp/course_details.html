@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 
-<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/14-08-2018/edulearn-demo_Free/275217196/web/{% url 'esiclass:course_details' %} by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Nov 2018 04:17:19 GMT -->
+<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/14-08-2018/edulearn-demo_Free/275217196/web/{% url 'course_details' %} by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Nov 2018 04:17:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<title>Edulearn Education Category Bootstrap Responsive Website Template | Course Details :: W3layouts</title>
@@ -101,11 +101,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="middle-w3ls-nav py-2">
 			<div class="container">
 				<div class="row">
-					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'esiclass:index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
+					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
 					<div class="col-lg-8 right-info-agiles mt-lg-0 mt-sm-3 mt-1">
 						<div class="row">
 							<div class="col-sm-12 col-6 top-login-butt text-right mt-sm-2">
-								<a href="{% url 'esiclass:login' %}" class="button-head-mow3 text-white">Đăng Nhập</a>
+								<a href="{% url 'login' %}" class="button-head-mow3 text-white">Đăng Nhập</a>
 							</div>
 						</div>
 					</div>
@@ -128,24 +128,24 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 					<ul class="navbar-nav justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{% url 'esiclass:index' %}">Trang Chủ
+							<a class="nav-link text-white" href="{% url 'index' %}">Trang Chủ
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{% url 'esiclass:about' %}">Về ES.I</a>
+							<a class="nav-link text-white" href="{% url 'about' %}">Về ES.I</a>
 						</li>
 						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Các Khóa Học
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:language' %}">Phát Âm</a>
-								<a class="dropdown-item" href="{% url 'esiclass:communication' %}">Cơ Bản</a>
-                                <a class="dropdown-item" href="{% url 'esiclass:business' %}">Giao Tiếp</a>
+								<a class="dropdown-item" href="{% url 'language' %}">Phát Âm</a>
+								<a class="dropdown-item" href="{% url 'communication' %}">Cơ Bản</a>
+                                <a class="dropdown-item" href="{% url 'business' %}">Giao Tiếp</a>
                                 <a class="dropdown-item" href="social_media.html">Dạy Kèm 1-1</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{% url 'esiclass:form' %}">Đăng Ký</a>
+								<a class="dropdown-item" href="{% url 'form' %}">Đăng Ký</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -153,14 +153,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								Tài Liệu
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:coming_soon' %}">Listening</a>
+								<a class="dropdown-item" href="{% url 'coming_soon' %}">Listening</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-white" href="gallery.html">Góc Học Viên</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{% url 'esiclass:contact' %}">Liên Hệ</a>
+							<a class="nav-link text-white" href="{% url 'contact' %}">Liên Hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -172,7 +172,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
-				<a href="{% url 'esiclass:index' %}">Trang Chủ</a>
+				<a href="{% url 'index' %}">Trang Chủ</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Chi Tiết Về Các Khóa Học</li>
 		</ol>
@@ -209,27 +209,27 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<ul>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Giáo trình thiết kế tỉ mỉ để đáp ứng nhu cầu của học viên.</a>
+										<a href="{% url 'course_details' %}" class="text-dark">Giáo trình thiết kế tỉ mỉ để đáp ứng nhu cầu của học viên.</a>
 									</li>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Cam kết giao tiếp cơ bản trong 6 tháng dành cho người mới bắt đầu.</a>
+										<a href="{% url 'course_details' %}" class="text-dark">Cam kết giao tiếp cơ bản trong 6 tháng dành cho người mới bắt đầu.</a>
 									</li>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Quá trình học tập và rèn luyện được theo dõi sát sao, học viên được hỗ trợ nâng cấp các kĩ năng cần 										thiết nhất.</a>
+										<a href="{% url 'course_details' %}" class="text-dark">Quá trình học tập và rèn luyện được theo dõi sát sao, học viên được hỗ trợ nâng cấp các kĩ năng cần 										thiết nhất.</a>
 									</li>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Giúp học viên tìm lại niềm vui trong việc học anh ngữ, không còn là nỗi ám ảnh mỗi khi đến lớp.</a>
+										<a href="{% url 'course_details' %}" class="text-dark">Giúp học viên tìm lại niềm vui trong việc học anh ngữ, không còn là nỗi ám ảnh mỗi khi đến lớp.</a>
 									</li>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Giao tiếp thực hành trực tiếp với người nước ngoài, không còn là lý thuyết suông.</a>
+										<a href="{% url 'course_details' %}" class="text-dark">Giao tiếp thực hành trực tiếp với người nước ngoài, không còn là lý thuyết suông.</a>
 									</li>
 									<li class="mt-3">
 										<i class="fas fa-check mr-2"></i>
-										<a href="{% url 'esiclass:course_details' %}" class="text-dark">Mô hình lớp học 10-12 học viên, giúp giáo viên và học viên tương tác tốt nhất trong từng buổi học
+										<a href="{% url 'course_details' %}" class="text-dark">Mô hình lớp học 10-12 học viên, giúp giáo viên và học viên tương tác tốt nhất trong từng buổi học
                                         </a>
 									</li>
 								</ul>
@@ -252,15 +252,15 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							<ul>
 								<li class="mt-3">
 									<i class="fas fa-check mr-2"></i>
-									<a href="{% url 'esiclass:language' %}">Độ Tuổi 18+</a>
+									<a href="{% url 'language' %}">Độ Tuổi 18+</a>
 								</li>
 								<li class="mt-3">
 									<i class="fas fa-check mr-2"></i>
-									<a href="{% url 'esiclass:communication' %}">Kiểm Tra Trình Độ</a>
+									<a href="{% url 'communication' %}">Kiểm Tra Trình Độ</a>
 								</li>
 								<li class="mt-3">
 									<i class="fas fa-check mr-2"></i>
-									<a href="{% url 'esiclass:business' %}">Có thể bắt đầu từ con số 0</a>
+									<a href="{% url 'business' %}">Có thể bắt đầu từ con số 0</a>
 								</li>
 							</ul>
 						</div>
@@ -286,7 +286,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:language' %}">
+						<a href="{% url 'language' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c1.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -297,7 +297,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:language' %}" class="text-dark">Phát Âm
+						<a href="{% url 'language' %}" class="text-dark">Phát Âm
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -308,7 +308,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:communication' %}">
+						<a href="{% url 'communication' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c2.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -319,7 +319,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:communication' %}" class="text-dark">Cơ Bản
+						<a href="{% url 'communication' %}" class="text-dark">Cơ Bản
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -330,7 +330,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:business' %}">
+						<a href="{% url 'business' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c3.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -341,7 +341,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:business' %}" class="text-dark">Giao Tiếp
+						<a href="{% url 'business' %}" class="text-dark">Giao Tiếp
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -461,5 +461,5 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 </body>
 
 
-<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/14-08-2018/edulearn-demo_Free/275217196/web/{% url 'esiclass:course_details' %} by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Nov 2018 04:17:19 GMT -->
+<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/14-08-2018/edulearn-demo_Free/275217196/web/{% url 'course_details' %} by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Nov 2018 04:17:19 GMT -->
 </html>

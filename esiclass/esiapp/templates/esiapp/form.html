@@ -3,12 +3,12 @@
 <html lang="vi">
 <head>
 	<title>ES.I CLASS ENGLISH</title>
-{% include 'header.html' %}
+{% include 'esiapp/header.html' %}
 	<!-- breadcrumb -->
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
-				<a href="{% url 'esiclass:index' %}">Trang Chủ</a>
+				<a href="{% url 'index' %}">Trang Chủ</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Admission Form</li>
 		</ol>
@@ -83,4 +83,4 @@
 		var element = document.getElementById("nav-item3");
   		element.classList.add("active");
 		</script>
-{% include 'footer.html' %}
+{% include 'esiapp/footer.html' %}

@@ -3,12 +3,12 @@
 <html lang="vi">
 <head>
 	<title>Edulearn Education Category Bootstrap Responsive Website Template | Language :: W3layouts</title>
-{% include 'header.html' %}
+{% include 'esiapp/header.html' %}
 <!-- breadcrumb -->
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
-				<a href="{% url 'esiclass:index' %}">Trang Chủ</a>
+				<a href="{% url 'index' %}">Trang Chủ</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Phát Âm</li>
 		</ol>
@@ -41,8 +41,8 @@
 					<img src="{% static  'esiapp/images/am1.jpg' %}" alt="" class="img-fluid">
 				</div>
 				<div class="buttons-w3ls">
-					<a class="btn button-cour-w3ls text-white" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm</a>
-					<a class="btn bg-dark text-white" href="{% url 'esiclass:form' %}" role="button">Đăng Ký</a>
+					<a class="btn button-cour-w3ls text-white" href="{% url 'course_details' %}" role="button">Đọc Thêm</a>
+					<a class="btn bg-dark text-white" href="{% url 'form' %}" role="button">Đăng Ký</a>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:language' %}">
+						<a href="{% url 'language' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c1.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -71,7 +71,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:language' %}" class="text-dark">Phát Âm
+						<a href="{% url 'language' %}" class="text-dark">Phát Âm
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -82,7 +82,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:communication' %}">
+						<a href="{% url 'communication' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c2.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -93,7 +93,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:communication' %}" class="text-dark">Cơ Bản
+						<a href="{% url 'communication' %}" class="text-dark">Cơ Bản
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -104,7 +104,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:business' %}">
+						<a href="{% url 'business' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c3.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -115,7 +115,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:business' %}" class="text-dark">Giao Tiếp
+						<a href="{% url 'business' %}" class="text-dark">Giao Tiếp
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -154,4 +154,4 @@
 		var element = document.getElementById("nav-item3");
   		element.classList.add("active");
 		</script>
-{% include 'footer.html' %}
+{% include 'esiapp/footer.html' %}

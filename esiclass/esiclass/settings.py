@@ -25,7 +25,7 @@ SECRET_KEY = 'so(m0d=)3m0d$q)(qan#4pxqo97lul1mv69#)pm+w6i7$#*lp7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rayquaza3333.pythonanywhere.com']
+ALLOWED_HOSTS = ['rayquaza3333.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'esiapp',
 ]
 
 MIDDLEWARE = [

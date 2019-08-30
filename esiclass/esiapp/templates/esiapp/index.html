@@ -50,11 +50,11 @@
 		<div class="middle-w3ls-nav py-2">
 			<div class="container">
 				<div class="row">
-					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'esiclass:index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
+					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'index' %}"><img src="{% static  'esiapp/images/logo-01-01.png' %}"></a>
 					<div class="col-lg-8 right-info-agiles mt-lg-0 mt-sm-3 mt-1">
 						<div class="row">
 							<div class="col-sm-12 col-6 top-login-butt text-right mt-sm-2">
-								<a href="{% url 'esiclass:login' %}" class="button-head-mow3 text-white">ĐĂNG NHẬP</a>
+								<a href="{% url 'login' %}" class="button-head-mow3 text-white">ĐĂNG NHẬP</a>
 							</div>
 						</div>
 					</div>
@@ -116,23 +116,23 @@
 				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 					<ul class="navbar-nav justify-content-center">
 						<li class="nav-item active">
-							<a class="nav-link text-white" href="{% url 'esiclass:index' %}">TRANG CHỦ
+							<a class="nav-link text-white" href="{% url 'index' %}">TRANG CHỦ
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{% url 'esiclass:about' %}">GIỚI THIỆU</a>
+							<a class="nav-link text-white" href="{% url 'about' %}">GIỚI THIỆU</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								KHÓA HỌC
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:language' %}">PHÁT ÂM</a>
-								<a class="dropdown-item" href="{% url 'esiclass:communication' %}">CƠ BẢN</a>
-								<a class="dropdown-item" href="{% url 'esiclass:business' %}">GIAO TIẾP</a>
+								<a class="dropdown-item" href="{% url 'language' %}">PHÁT ÂM</a>
+								<a class="dropdown-item" href="{% url 'communication' %}">CƠ BẢN</a>
+								<a class="dropdown-item" href="{% url 'business' %}">GIAO TIẾP</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{% url 'esiclass:form' %}">ĐĂNG KÝ</a>
+								<a class="dropdown-item" href="{% url 'form' %}">ĐĂNG KÝ</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -140,14 +140,14 @@
 								TÀI LIỆU
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="{% url 'esiclass:coming_soon' %}">LISTENING</a>
+								<a class="dropdown-item" href="{% url 'coming_soon' %}">LISTENING</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-white" href="gallery.html">HỌC VIÊN</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="{% url 'esiclass:contact' %}">LIÊN HỆ</a>
+							<a class="nav-link text-white" href="{% url 'contact' %}">LIÊN HỆ</a>
 						</li>
 					</ul>
 				</div>
@@ -225,7 +225,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:language' %}">
+						<a href="{% url 'language' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c1.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -236,7 +236,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:language' %}" class="text-dark">Phát Âm
+						<a href="{% url 'language' %}" class="text-dark">Phát Âm
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -247,7 +247,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:communication' %}">
+						<a href="{% url 'communication' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c2.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -258,7 +258,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:communication' %}" class="text-dark">Cơ Bản
+						<a href="{% url 'communication' %}" class="text-dark">Cơ Bản
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -269,7 +269,7 @@
 					<!-- Left to right -->
 					<!-- normal -->
 					<div class="ih-item circle effect16 left_to_right mx-auto">
-						<a href="{% url 'esiclass:communication' %}">
+						<a href="{% url 'communication' %}">
 							<div class="img">
 								<img src="{% static  'esiapp/images/c3.jpg' %}" alt="img" class="img-fluid rounded-circle">
 							</div>
@@ -280,7 +280,7 @@
 						</a>
 					</div>
 					<h6 class="small-heading text-capitalize text-center mt-4">
-						<a href="{% url 'esiclass:communication' %}" class="text-dark">Giao Tiếp
+						<a href="{% url 'communication' %}" class="text-dark">Giao Tiếp
 							<i class="fas fa-long-arrow-alt-right ml-1"></i>
 						</a>
 					</h6>
@@ -336,7 +336,7 @@
 							<p class="text-dark">Đọc chuẩn xác 44 âm</p>
 							<p class="text-dark">Đọc chuẩn xác phiên âm</p>
 							<p class="text-dark">Ngữ điệu tự nhiên</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Đọc Thêm
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -354,7 +354,7 @@
 							<h4 class="text-capitalize font-weight-bold mb-3 text-dark">– Khoá cơ bản cho người mất gốc. </h4>
 							<p class="text-dark">Ngữ pháp và từ vựng cơ bản nhất</p>
 							<p class="text-dark">Giúp học viên tìm lại sự tự tin và niềm vui học anh ngữ.</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Đọc Thêm
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -373,7 +373,7 @@
 							<p class="text-dark">Giáo trình theo 3 level học</P>
 							<p class="text-dark">Phản xạ giao tiếp nhanh nhẹn.</p>
 							<p class="text-dark">Giao tiếp với giáo viên bản ngữ hằng tuần.</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Đọc Thêm
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
@@ -392,7 +392,7 @@
 							<p class="text-dark">Luyện khả năng nghe - đọc - hiểu trong giao tiếp hằng ngày</p>
 							<p class="text-dark">Tương tác đặc biệt giữa giáo viên và học viên</p>
 							<p class="text-dark">Thời gian linh động, đặc biệt phù hợp cho người bận rộn</p>
-							<a class="btn mt-3 service-button p-0" href="{% url 'esiclass:course_details' %}" role="button">Đọc Thêm
+							<a class="btn mt-3 service-button p-0" href="{% url 'course_details' %}" role="button">Đọc Thêm
 								<i class="fas fa-long-arrow-alt-right ml-1"></i>
 							</a>
 						</div>
