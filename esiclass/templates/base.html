@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="vi">
+<head>
+	<title>
+		{% block title1 %}
+		Test
+		{% endblock  %}
+	</title>
+	<meta name="keywords" content=""/>
+	<!-- Meta tag Keywords -->
+{# Header #}
+	<link rel="icon" type="image/png" sizes="56x56" href="{% static  'esiclass/images/favicon.png' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="stylesheet" href="{% static  'esiclass/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static  'esiclass/css/style.css' %}" type="text/css" media="all" />
+    <link href="{% static  'esiclass/css/mislider.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static  'esiclass/css/mislider-custom.css' %}" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static  'esiclass/css/fontawesome-all.css' %}">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<!-- top header -->
+		<!-- //top header -->
+		<!-- middle header -->
+		<div class="middle-w3ls-nav py-2">
+			<div class="container">
+				<div class="row">
+					<a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="{% url 'esiclass:index' %}"><img src="{% static  'esiclass/images/logo-01-01.png' %}"></a>
+					<div class="col-lg-8 right-info-agiles mt-lg-0 mt-sm-3 mt-1">
+						<div class="row">
+							<div class="col-sm-12 col-6 top-login-butt text-right mt-sm-2">
+								<a href="{% url 'esiclass:login' %}" class="button-head-mow3 text-white">Đăng Nhập</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //middle header -->
+	</header>
+	<!-- //header -->
+
+	<!-- banner -->
+	<div class="banner-agile-2">
+		<!-- navigation -->
+		<div class="navigation-w3ls">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+					<ul class="navbar-nav justify-content-center">
+						<li class="nav-item" id="nav-item1">
+							<a class="nav-link text-white" href="{% url 'esiclass:index' %}">TRANG CHỦ
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item" id="nav-item2">
+							<a class="nav-link text-white" href="{% url 'esiclass:about' %}">GIỚI THIỆU</a>
+						</li>
+						<li class="nav-item dropdown" id="nav-item3">
+							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								KHÓA HỌC
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="{% url 'esiclass:language' %}">PHÁT ÂM</a>
+								<a class="dropdown-item" href="{% url 'esiclass:communication' %}">CƠ BẢN</a>
+								<a class="dropdown-item" href="{% url 'esiclass:business' %}">GIAO TIẾP</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="{% url 'esiclass:form' %}">ĐĂNG KÝ</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown" id="nav-item4">
+							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								TÀI LIỆU
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="{% url 'esiclass:coming_soon' %}">LISTENING</a>
+							</div>
+						</li>
+						<li class="nav-item" id="nav-item5">
+							<a class="nav-link text-white" href="gallery.html">HỌC VIÊN</a>
+						</li>
+						<li class="nav-item" id="nav-item6">
+							<a class="nav-link text-white" href="{% url 'esiclass:contact' %}">LIÊN HỆ</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</div>
+
+
+
+
+{# end header #}
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="{% url 'esiclass:index' %}">Trang Chủ</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">
+				{% block title2 %}
+				Test
+				{% endblock  %}
+			</li>
+		</ol>
+	</nav>
+	<!-- breadcrumb -->
+	<!-- course-->
+	<div class="course-w3ls py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">Khóa Học -
+				<span class="font-weight-bold">
+						{% block title3 %}
+						Test
+						{% endblock  %}
+				</span>
+			</h3>
+		</div>
+	</div>
+      {# mark #}
+
+	<div class="container py-xl-5 py-lg-3">
+
+		{% block content %}{% endblock content %}
+
+	</div>
+
+
+	<!-- //course -->
+{# footer #}
+<!-- footer -->
+	<footer>
+		<div class="container py-4">
+			<div class="row py-xl-5 py-sm-3">
+				<div class="col-lg-6 map">
+					<h2 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">ES.I -
+						<span class="font-weight-bold">Địa Chỉ</span>
+					</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.7539861503894!2d106.7032577292036!3d10.810090399518673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175295115b35db7%3A0xb973732223c5ca12!2sC%C3%94NG+TY+TNHH+FATAMEDIA!5e0!3m2!1svi!2s!4v1544675628854" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="conta-posi-w3ls p-4 rounded">
+						<h5 class="text-white font-weight-bold mb-3">Địa Chỉ</h5>
+						<p>D1 Khu Chung Cư Đất Phương Nam
+							<span>243 Chu Văn An,</span> P. 12, Q. Bình Thạnh, Tp.HCM</p>
+					</div>
+				</div>
+				<div class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">
+				  <h3 class="font-weight-bold text-white">Kết nối <span class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">với chúng tôi</span> </h3>
+				  <p>&nbsp;</p>
+				  <p class="conta-para-style border-left pl-4">Nếu bạn có bất cứ thắc mắc nào về khóa học, hãy liên hệ ngay với hotline hoặc email bên dưới
+                    để được hỗ trợ và tư vấn.</p>
+					<div class="subscribe-w3ls my-xl-5 my-4">
+						<h6 class="text-white text-capitalize mb-4">Nhập Email để nhận mọi thông tin sớm nhất!</h6>
+						<form action="#" method="post" class="subscribe_form">
+							<input class="form-control" type="email" name="email" placeholder="Enter your email..." required="">
+							<button type="submit" class="btn btn-primary submit">Submit</button>
+						</form>
+					</div>
+					<p class="para-agileits-w3layouts text-white">
+						<i class="fas fa-map-marker pr-3"></i>D1 KDC Đất Phương Nam, 243 Chu Văn An, P. 12, Q. BT, Tp.HCM</p>
+					<p class="para-agileits-w3layouts text-white my-sm-3 my-2">
+						<i class="fas fa-phone pr-3"></i>(028) 668 338 94</p>
+					<p class="para-agileits-w3layouts">
+						<i class="far fa-envelope-open pr-2"></i>
+						<a href="mailto:mail@example.com" class=" text-white">esiclassvn@gmail.com</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-agiles py-3">
+			<div class="container">
+				<div class="row">
+					<p class="col-lg-8 copy-right-grids text-white text-lg-left text-center mt-lg-1">© 2018 ES.I. All Rights Reserved | Design by
+						<a href="" target="_blank">LOUIS</a>
+					</p>
+					<!-- social icons -->
+					<!-- //social icons -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="{% static  'esiclass/js/jquery-2.2.3.min.js' %}"></script>
+	<!-- Default-JavaScript-File -->
+	<script src="{% static  'esiclass/js/bootstrap.js' %}"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- smooth scrolling -->
+	<script src="{% static  'esiclass/js/SmoothScroll.min.js' %}"></script>
+	<!-- move-top -->
+	<script src="{% static  'esiclass/js/move-top.js' %}"></script>
+	<!-- easing -->
+	<script src="{% static  'esiclass/js/easing.js' %}"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="{% static  'esiclass/js/edulearn.js' %}"></script>
+    <!-- banner slider -->
+	<script src="{% static  'esiclass/js/slider.js' %}"></script>
+	<!-- //banner slider -->
+
+	<!-- testimonial-plugin -->
+	<script src="{% static  'esiclass/js/mislider.js' %}"></script>
+	<script>
+
+</body>
+</html>
