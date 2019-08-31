@@ -19,6 +19,7 @@ Danh sách người đăng ký
         <th>Name</th>
         <th>Phone</th>
         <th>Email</th>
+        <th>Submited date</th>
         <th>Recording</th>
       </tr>
       {% for contact in contact_list %}
@@ -27,6 +28,7 @@ Danh sách người đăng ký
           <td>{{contact.name}}</td>
           <td>{{contact.phone}}</td>
           <td>{{contact.email}}</td>
+          <td>{{contact.submit_date}}</td>
           {% if contact.recording %}
           <td>
             <audio src="{{ contact.recording.url }}" controls>
@@ -41,6 +43,7 @@ Danh sách người đăng ký
   </table>
   {% else %}
   <h1>Xin lỗi nhưng bạn chưa có quyền vô trang này, hihi</h1>
+  <h1>Truy cập <a href="{% url 'admin:index' %}">quản trị viên</a> để đăng nhập</h1>
   {% endif %}
 
 
