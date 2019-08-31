@@ -16,22 +16,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from esiapp import views
+import registration
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path('test/', views.TestView.as_view(template_name = 'esiapp/test.html'), name = 'test'),
-    path('about', views.EsiViews.as_view(template_name = 'esiapp/about.html'), name = 'about' ),
-    path('business', views.EsiViews.as_view(template_name = 'esiapp/business.html'), name = 'business' ),
-    path('coming_soon', views.EsiViews.as_view(template_name = 'esiapp/coming_soon.html'), name = 'coming_soon' ),
-    path('communication', views.EsiViews.as_view(template_name = 'esiapp/communication.html'), name = 'communication' ),
-    path('contact', views.EsiViews.as_view(template_name = 'esiapp/contact.html'), name = 'contact' ),
-    path('course_details', views.EsiViews.as_view(template_name = 'esiapp/course_details.html'), name = 'course_details' ),
-    path('footer', views.EsiViews.as_view(template_name = 'esiapp/footer.html'), name = 'footer' ),
-    path('form', views.EsiViews.as_view(template_name = 'esiapp/form.html'), name = 'form' ),
-    path('header', views.EsiViews.as_view(template_name = 'esiapp/header.html'), name = 'header' ),
-    path('hocvien', views.EsiViews.as_view(template_name = 'esiapp/hocvien.html'), name = 'hocvien' ),
-    path('index', views.EsiViews.as_view(template_name = 'esiapp/index.html'), name = 'index' ),
-    path('language', views.EsiViews.as_view(template_name = 'esiapp/language.html'), name = 'language' ),
-    path('login', views.EsiViews.as_view(template_name = 'esiapp/login.html'), name = 'login' ),
+
+    path('registration/', include('registration.urls', namespace = 'registration')),
+    path('esiadmin/', include('esiadmin.urls', namespace = 'esiadmin')),
+    path('about/', views.EsiViews.as_view(template_name = 'esiapp/about.html'), name = 'about' ),
+    path('business/', views.EsiViews.as_view(template_name = 'esiapp/business.html'), name = 'business' ),
+    path('coming_soon/', views.EsiViews.as_view(template_name = 'esiapp/coming_soon.html'), name = 'coming_soon' ),
+    path('communication/', views.EsiViews.as_view(template_name = 'esiapp/communication.html'), name = 'communication' ),
+    path('contact/', views.EsiViews.as_view(template_name = 'esiapp/contact.html'), name = 'contact' ),
+    path('course_details/', views.EsiViews.as_view(template_name = 'esiapp/course_details.html'), name = 'course_details' ),
+    path('footer/', views.EsiViews.as_view(template_name = 'esiapp/footer.html'), name = 'footer' ),
+    path('form/', views.EsiViews.as_view(template_name = 'esiapp/form.html'), name = 'form' ),
+    path('header/', views.EsiViews.as_view(template_name = 'esiapp/header.html'), name = 'header' ),
+    path('hocvien/', views.EsiViews.as_view(template_name = 'esiapp/hocvien.html'), name = 'hocvien' ),
+    path('index/', views.EsiViews.as_view(template_name = 'esiapp/index.html'), name = 'index' ),
+    path('language/', views.EsiViews.as_view(template_name = 'esiapp/language.html'), name = 'language' ),
+    path('login/', views.EsiViews.as_view(template_name = 'esiapp/login.html'), name = 'login' ),
     path('', views.EsiViews.as_view(template_name = 'esiapp/index.html'), name = 'esiviews' ),
-    path('admin', admin.site.urls),
-]
+    path('admin/', admin.site.urls),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

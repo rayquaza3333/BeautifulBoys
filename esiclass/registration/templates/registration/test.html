@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="vi">
+<head>
+<title>ESI ENGLISH CLASS</title>
+<link rel="shortcut icon" href="{% static  'esiapp/images/favicon.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{% static 'esiapp/assets/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<script type="text/javascript" src="{% static 'esiapp/assets/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'esiapp/assets/test.js' %}">	</script>
+
+
+</head>
+<body>
+	<!-- main -->
+	<div class="main">
+
+		<div class="main-w3l">
+			<a class="logo"><img src="{% static  'esiapp/images/logo.png' %}"></a>
+			<h1 class="logo-w3">ĐĂNG KÝ KIỂM TRA TRÌNH ĐỘ TIẾNG ANH</h1>
+			<div class="w3layouts-main">
+				<h2><span>Miễn phí 100%</span></h2>
+					<h3>Bạn vui lòng nhập đầy đủ thông tin:</h3>
+					<form class=""  method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						<input placeholder="Tên của bạn (VD: Lan)" name="tenhocvien" type="text" class="tenhocvien" >
+						<input placeholder="Số điện thoại" name="sdthocvien" type="phone" class="sdthocvien" >
+						<input placeholder="Email" name="emailhocvien" type="email" class="emailhocvien" >
+						<p>
+							Nếu được, bạn hãy ghi âm lại các từ sau đây vào một file và gửi cho chúng tôi nhé:
+							<a target = "_blank" href="{% url 'registration:pronoun' %}">Phát âm</a>
+						</p>
+							<label class = "button" for="recording">Upload</label>
+							<input id ='recording' name='recording' placeholder="Email"  type="file" class ='hiddenfileupload'  >
+							<input type="submit" name="" value="Đăng Ký" class = 'button'>
+					</form>
+			</div>
+
+			<h1>{{name}}</h1>
+		<!-- footer -->
+		<div class="footer-w3l">
+			<p>&copy; 2018 ESI ENGLISH CLASS All rights reserved</p>
+		</div>
+
+		<!-- footer -->
+		</div>
+	</div>
+
+</body>
+</html>

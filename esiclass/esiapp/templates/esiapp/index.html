@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html lang="vi">
 <head>
 	<title>ES.I ENGLISH CLASS - BRIGHTEN YOUR ENGLISH</title>
@@ -102,7 +102,7 @@
 					<b>is our mission!</b>
 				</h3>
 				<p class="px-4 py-3 text-dark">Tiếng Anh Giao Tiếp Cho Người Đi Làm</p>
-				<a href="https://esiclass.com/test/" class="button-agiles text-capitalize text-white mt-sm-5 mt-4">Kiểm Tra Trình Độ</a>
+				<a href="{% url 'registration:test' %}" target ='_blank' class="button-agiles text-capitalize text-white mt-sm-5 mt-4">Đăng ký Kiểm Tra Trình Độ</a>
 			</div>
 		</div>
 
