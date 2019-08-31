@@ -26,6 +26,7 @@ Danh sách người đăng ký
           <td>{{contact.pk}}</td>
           <td>{{contact.name}}</td>
           <td>{{contact.phone}}</td>
+          <td>{{contact.email}}</td>
           {% if contact.recording %}
           <td>
             <audio src="{{ contact.recording.url }}" controls>
